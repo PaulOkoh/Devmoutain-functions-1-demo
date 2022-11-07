@@ -76,3 +76,31 @@ surpriseAttack(40);
 //let remainingPlushShield = surpriseAttack(18) + 50;
 
 //console.log(jonSnowHealth);
+
+//multiple parameters can be used
+function greeting(person1, person2) {
+  console.log(`${person1} and ${person2} are saying hello to each other`);
+}
+
+greeting("Ned", "Jon");
+
+//functions with returns
+
+function rollDice() {
+  let possibleRolls = [1, 2, 3, 4, 5, 6];
+  let randomIndex = Math.floor(Math.random() * possibleRolls.length);
+  return possibleRolls[randomIndex];
+}
+
+let firstRoll = rollDice();
+let secondRoll = rollDice();
+console.log(firstRoll, secondRoll);
+
+function diceMultiplier() {
+  let firstRoll = rollDice();
+  let secondRoll = rollDice();
+  return firstRoll * secondRoll;
+}
+let multipliedRoll = diceMultiplier();
+console.log(multipliedRoll);
+//console.log(firstRoll, secondRoll);
